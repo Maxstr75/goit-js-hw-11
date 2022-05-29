@@ -1,5 +1,5 @@
-export function cardTemplate(galleryItems) {
-  return galleryItems
+export function cardTemplate(item) {
+  return item
     .map(({ largeImageURL, webformatURL, tags }) => {
       return `<div class='photo-card'>
   <a href='${largeImageURL}'>
