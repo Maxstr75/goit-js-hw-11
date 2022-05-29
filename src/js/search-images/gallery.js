@@ -1,4 +1,7 @@
-`<div class='photo-card'>
+export function cardTemplate(galleryItems) {
+  return galleryItems
+    .map(({ largeImageURL, webformatURL, tags }) => {
+      return `<div class='photo-card'>
   <a href='${largeImageURL}'>
     <img src='${webformatURL}' alt='${tags}' loading='lazy' />
   </a>
@@ -21,3 +24,6 @@
     </p>
   </div>
 </div>`;
+    })
+    .join('');
+}
