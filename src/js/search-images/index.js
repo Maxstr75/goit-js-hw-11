@@ -1,4 +1,4 @@
-import fetchImages from './search-images-api';
+import fetchImages from '../search-images/search-images-api';
 import cardTemplate from '../search-images/gallery';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 import SimpleLightbox from 'simplelightbox';
