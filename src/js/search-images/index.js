@@ -1,10 +1,6 @@
 import fetchImages from './search-images-api';
 import cardTemplate from './gallery';
-import {
-  noFindMessage,
-  galleryEndMessage,
-  totalImgMessage,
-} from './notiflix-message';
+import { Notify } from 'notiflix/build/notiflix-notify-aio';
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 import throttle from 'lodash.throttle';
