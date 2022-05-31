@@ -13,8 +13,8 @@ const { searchForm, gallery, loadMoreBtn, endCollectionText } = {
 };
 
 function renderCardImage(arr) {
-  const markup = arr.map(item => cardTemplate(item)).join('');
-  gallery.insertAdjacentHTML('beforeend', markup);
+  // const markup = arr.map(item => cardTemplate(item)).join('');
+  gallery.insertAdjacentHTML('beforeend', cardTemplate(arr));
 }
 
 let lightbox = new SimpleLightbox('.photo-card a', {
