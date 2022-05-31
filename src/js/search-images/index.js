@@ -60,7 +60,7 @@ async function onSubmitSearchForm(e) {
         .firstElementChild.getBoundingClientRect();
 
       window.scrollBy({
-        top: cardHeight * -100,
+        top: cardHeight * 2,
         behavior: 'smooth',
       });
     }
