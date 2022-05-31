@@ -1,7 +1,16 @@
-export function cardTemplate(item) {
+export default function cardTemplate(item) {
   return item
-    .map(({ largeImageURL, webformatURL, tags }) => {
-      return `<div class='photo-card'>
+    .map(
+      ({
+        largeImageURL,
+        webformatURL,
+        tags,
+        likes,
+        views,
+        comments,
+        downloads,
+      }) => {
+        return `<div class='photo-card'>
   <a href='${largeImageURL}'>
     <img src='${webformatURL}' alt='${tags}' loading='lazy' />
   </a>
@@ -24,6 +33,7 @@ export function cardTemplate(item) {
     </p>
   </div>
 </div>`;
-    })
+      }
+    )
     .join('');
 }
